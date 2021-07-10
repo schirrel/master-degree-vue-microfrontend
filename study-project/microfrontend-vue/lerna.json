@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "cart",
+    "products",
+    "profile",
+    "root"
+  ],
+  "version": "0.0.0"
+}
