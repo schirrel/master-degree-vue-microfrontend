@@ -5,11 +5,6 @@ module.exports = {
   publicPath: "http://localhost:3001/",
   transpileDependencies: ["vuetify"],
   configureWebpack: {
-    resolve: {
-      alias: {
-        vue$: "vue/dist/vue.runtime.esm.js",
-      },
-    },
     plugins: [
       new ModuleFederationPlugin({
         name: "cart",
@@ -17,6 +12,7 @@ module.exports = {
         exposes: {
           "./Cart": "./src/components/Cart",
         },
+        shared: require("./package.json").dependencies,
       }),
     ],
   },

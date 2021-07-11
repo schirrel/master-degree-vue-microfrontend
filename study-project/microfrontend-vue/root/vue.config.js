@@ -1,5 +1,6 @@
 const ModuleFederationPlugin = require("webpack").container
   .ModuleFederationPlugin;
+  const dependencies = require("./package.json").dependencies;
 
 module.exports = {
   publicPath: "http://localhost:3000/",
@@ -15,6 +16,7 @@ module.exports = {
           products: "products@http://localhost:3002/remoteEntry.js",
           profile: "profile@http://localhost:3003/remoteEntry.js",
         },
+        shared: dependencies,
       }),
     ],
   },

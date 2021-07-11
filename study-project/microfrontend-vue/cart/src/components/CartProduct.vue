@@ -14,7 +14,9 @@
     </v-list-item-content>
 
     <v-list-item-action>
-      <v-btn> Edit </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-pencil</v-icon>
+      </v-btn>
     </v-list-item-action>
   </v-list-item>
 </template>

@@ -12,6 +12,7 @@ module.exports = {
         exposes: {
           "./Profile": "./src/components/Profile",
         },
+        shared: require("./package.json").dependencies,
       }),
     ],
   },

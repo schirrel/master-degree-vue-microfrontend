@@ -12,6 +12,7 @@ module.exports = {
         exposes: {
           "./Products": "./src/components/Products",
         },
+        shared: require("./package.json").dependencies,
       }),
     ],
   },
