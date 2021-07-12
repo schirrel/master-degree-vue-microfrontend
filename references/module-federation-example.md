@@ -1,0 +1,1 @@
+A project is being study and developt at https://github.com/mfe-module-federation-vue
